@@ -10,6 +10,7 @@ output:
 # ミクロデータサイエンス課題
 - 廣江友哉
 - 2125178
+- https://github.com/tomoyahiroe/micro-data-science.git
 
 
 ## functionの活用と可読性の向上
