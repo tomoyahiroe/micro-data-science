@@ -104,7 +104,7 @@ define_figures <- function() {
     average_data <- as.data.frame(average_store)
     figure_made <- ggplot(average_data, aes(x = V2, y = V1)) + geom_line(colour = "blue",
                                                                          size = 2) + labs(x = "sample size", y = "averages") + ggtitle(figure_title) +
-      theme_bw() + ggsave(save_title, width = 5, height = 5)
+      theme_bw() # + ggsave(save_title, width = 5, height = 5) エラーはいたのでコメントアウトしました。
     print(figure_made)
     
   }

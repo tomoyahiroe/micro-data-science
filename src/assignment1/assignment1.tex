@@ -1,0 +1,269 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={assignment1},
+  pdfauthor={tomoya hirore},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{assignment1}
+\author{tomoya hirore}
+\date{2023-05-30}
+
+\begin{document}
+\maketitle
+
+\hypertarget{ux30dfux30afux30edux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux8ab2ux984c}{%
+\section{ミクロデータサイエンス課題}\label{ux30dfux30afux30edux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux8ab2ux984c}}
+
+\begin{itemize}
+\tightlist
+\item
+  廣江友哉
+\item
+  2125178
+\end{itemize}
+
+\hypertarget{functionux306eux6d3bux7528ux3068ux53efux8aadux6027ux306eux5411ux4e0a}{%
+\subsection{functionの活用と可読性の向上}\label{functionux306eux6d3bux7528ux3068ux53efux8aadux6027ux306eux5411ux4e0a}}
+
+\hypertarget{ux30eaux30d5ux30a1ux30afux30bfux30eaux30f3ux30b0}{%
+\subsubsection{(1)リファクタリング}\label{ux30eaux30d5ux30a1ux30afux30bfux30eaux30f3ux30b0}}
+
+同様のコードが、assignment1/refactoring.Rに書いてあります。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{successP }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(error\_probability, number) \{}
+  \FunctionTok{return}\NormalTok{ (}\DecValTok{1} \SpecialCharTok{{-}}\NormalTok{ (error\_probability }\SpecialCharTok{\^{}}\NormalTok{ number))}
+\NormalTok{\}}
+\NormalTok{P1 }\OtherTok{\textless{}{-}} \FloatTok{0.05}
+\NormalTok{P2 }\OtherTok{\textless{}{-}} \FloatTok{0.05}
+\NormalTok{N2 }\OtherTok{\textless{}{-}} \DecValTok{5000}
+\NormalTok{N1 }\OtherTok{\textless{}{-}} \DecValTok{5}
+
+\FunctionTok{successP}\NormalTok{(P1, N1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.9999997
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{successP}\NormalTok{(P2, N2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1
+\end{verbatim}
+
+\hypertarget{ux30dcux30fcux30caux30b9ux554fux984c}{%
+\subsubsection{(2)ボーナス問題}\label{ux30dcux30fcux30caux30b9ux554fux984c}}
+
+\begin{itemize}
+\tightlist
+\item
+  場合１の成功確率は、 0.9999997
+\item
+  場合２の成功確率は、1
+\end{itemize}
+
+\hypertarget{ux4e2dux8eabux6975ux9650ux5b9aux7406ux3068ux4fddux967aux306eux53efux80fdux6027}{%
+\subsection{中身極限定理と保険の可能性}\label{ux4e2dux8eabux6975ux9650ux5b9aux7406ux3068ux4fddux967aux306eux53efux80fdux6027}}
+
+\hypertarget{abux30bdux30fcux30b9ux30b3ux30fcux30c9ux306eux4feeux6b63}{%
+\subsubsection{(a)(b)ソースコードの修正}\label{abux30bdux30fcux30b9ux30b3ux30fcux30c9ux306eux4feeux6b63}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\# 以下3つの関数の誤りを修正}
+\NormalTok{define\_unemployment }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(param) \{}
+  
+\NormalTok{  quantile\_unemployment }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(q) \{}
+    \ControlFlowTok{if}\NormalTok{ (q }\SpecialCharTok{\textless{}}\NormalTok{ param}\SpecialCharTok{$}\NormalTok{unemployment\_risk) \{}
+\NormalTok{      Y }\OtherTok{\textless{}{-}} \SpecialCharTok{{-}}\NormalTok{param}\SpecialCharTok{$}\NormalTok{insurance\_premium}
+\NormalTok{    \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{      Y }\OtherTok{\textless{}{-}}\NormalTok{ param}\SpecialCharTok{$}\NormalTok{insurance\_provision}
+\NormalTok{    \}}
+    \FunctionTok{return}\NormalTok{(Y)}
+\NormalTok{  \}}
+  \FunctionTok{return}\NormalTok{(quantile\_unemployment)}
+  
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{./result/unemployment-insurance-payment-simulation.jpeg}
+
+\textbf{上記の画像のように、約500人以上いると大体安定した雇用保険の運用ができると考えられます。}
+
+\hypertarget{c-ux73feux5b9fux3068ux4e56ux96e2ux3057ux3048ux308bux4eeeux5b9a}{%
+\subsubsection{(c)
+現実と乖離しえる仮定}\label{c-ux73feux5b9fux3068ux4e56ux96e2ux3057ux3048ux308bux4eeeux5b9a}}
+
+現実には失業率が一定ということはなく、時代の大きな出来事によって一時的に失業率が大きく増加することが考えられます。たとえば、2008年のリーマンショックやバブル崩壊などが挙げられます。
+
+\hypertarget{dux30b3ux30fcux30c9ux306eux4feeux6b63ux3068ux30b7ux30dfux30e5ux30ecux30fcux30b7ux30e7ux30f3}{%
+\subsubsection{(d)コードの修正とシミュレーション}\label{dux30b3ux30fcux30c9ux306eux4feeux6b63ux3068ux30b7ux30dfux30e5ux30ecux30fcux30b7ux30e7ux30f3}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{define\_earthquake }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(param) \{}
+\NormalTok{  quantile\_earthquake }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(q) \{}
+\NormalTok{    Y }\OtherTok{\textless{}{-}}\NormalTok{ param}\SpecialCharTok{$}\NormalTok{payment\_fraction }\SpecialCharTok{*}\NormalTok{ (}\DecValTok{1} \SpecialCharTok{{-}}\NormalTok{ q)}\SpecialCharTok{\^{}}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{1}\SpecialCharTok{/}\NormalTok{param}\SpecialCharTok{$}\NormalTok{alpha)}
+    \FunctionTok{return}\NormalTok{(Y)}
+\NormalTok{  \}}
+  \FunctionTok{return}\NormalTok{(quantile\_earthquake)}
+\NormalTok{\}}
+
+\NormalTok{define\_simulator }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(param) \{}
+\NormalTok{  simulate\_distribution }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(quantile) \{}
+    \FunctionTok{set.seed}\NormalTok{(param}\SpecialCharTok{$}\NormalTok{num.seed)}
+\NormalTok{    q.unif }\OtherTok{\textless{}{-}} \FunctionTok{runif}\NormalTok{(param}\SpecialCharTok{$}\NormalTok{N.simulate)}
+\NormalTok{    data\_simulated }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{, param}\SpecialCharTok{$}\NormalTok{N.simulate)}
+    
+    \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{param}\SpecialCharTok{$}\NormalTok{N.simulate) \{}
+\NormalTok{      q }\OtherTok{\textless{}{-}}\NormalTok{ q.unif[i]}
+\NormalTok{      data\_simulated[i] }\OtherTok{\textless{}{-}} \FunctionTok{quantile}\NormalTok{(q)}
+\NormalTok{    \}}
+    \FunctionTok{return}\NormalTok{(data\_simulated)}
+\NormalTok{  \}}
+  \FunctionTok{return}\NormalTok{(simulate\_distribution)}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{./result/earthquake-insurance-payment-simulation.jpeg}
+加入世帯が多いと支払い多少安定する傾向がありますが、それほど安定しているとは言えない。
+
+\hypertarget{eux73feux5b9fux306bux5730ux9707ux4fddux967aux3092ux6210ux308aux7acbux305fux305bux308bux305fux3081ux306bux306f}{%
+\subsubsection{(e)現実に地震保険を成り立たせるためには}\label{eux73feux5b9fux306bux5730ux9707ux4fddux967aux3092ux6210ux308aux7acbux305fux305bux308bux305fux3081ux306bux306f}}
+
+過去に支払ってきた保険金の額と、被害の度合いに合わせて支払額を変えるモデルを作成することで、現実に即した地震保険を成り立たせることができると考えました。
+
+\hypertarget{fset_seedux306eux610fux7fa9}{%
+\subsubsection{(f)set\_seedの意義}\label{fset_seedux306eux610fux7fa9}}
+
+結果を再現可能にするという意義があります。
+
+\hypertarget{ux751fux6210aiux306bux3064ux3044ux3066ux306eux601dux7d22}{%
+\subsection{生成AIについての思索}\label{ux751fux6210aiux306bux3064ux3044ux3066ux306eux601dux7d22}}
+
+\hypertarget{a-ux30d7ux30edux30b0ux30e9ux30dfux30f3ux30b0ux3092ux5b66ux3076ux610fux7fa9}{%
+\subsubsection{(a)
+プログラミングを学ぶ意義}\label{a-ux30d7ux30edux30b0ux30e9ux30dfux30f3ux30b0ux3092ux5b66ux3076ux610fux7fa9}}
+
+たとえ生成AIなどによって分析レポートが手動で作成されなくなったとしても、レポートの統計的正しさや、分析のためのソースコードの正しさをチェックするためにデータ分析プログラミングを学ぶ意義は大いにあると思います。
+間違った統計情報をきちんと判別できるように、そのような目を養えるように意識しながら学習を進めることが適切だと思います。
+
+\hypertarget{b-ux9244ux8155ux30a2ux30c8ux30e0ux304bux3089ux8003ux3048ux308baiux898fux5236}{%
+\subsubsection{(b)
+鉄腕アトムから考えるAI規制}\label{b-ux9244ux8155ux30a2ux30c8ux30e0ux304bux3089ux8003ux3048ux308baiux898fux5236}}
+
+議論したいのですが、鉄腕アトムを読んだことがありません。Wikipediaであらすじをさらったのでそれを元に論じようと思います。
+まず、AI規制の可能性ですが、これはおそらく、「AIを完全には規制できないが、進歩を遅らせることで、社会がAIを受容するための準備時間を作る」というものだと推測できます。上記の可能性は間違いなくありますが、完全に規制をすることの限界も同時に示しています。
+AIを規制しようとする人々の中には、AIが感情を宿して人に変わるのではないかと危惧する方もいるかもしれないですし、天馬博士のように可能ならば死んだ息子を蘇らせたいと思いAIに期待をしている人もいるかもしれません。
+
+ロボットは感情を持ちうるか、という問いに対してはあらすじを読んだ段階では、「限定的な感情なら持ちうる」という答えを示しているように感じました。というのも、アトムは自然に対する畏怖などの複雑な感情を抱けないという設定になっていたそうです。
+
+\end{document}
